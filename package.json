@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-rails-routes",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Ember CLI addon portion of the ember-cli-rails-routes gem.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Chase McCarthy",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
@@ -38,12 +38,17 @@
     "ember-try": "0.0.6"
   },
   "keywords": [
+    "asset",
+    "prepend",
     "ember-addon"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.3"
+    "ember-cli-babel": "^5.1.3",
+    "broccoli-asset-rewrite": "^1.0.9",
+    "broccoli-stew": "^0.3.6"
   },
   "ember-addon": {
+    "main": "index.js",
     "configPath": "tests/dummy/config"
   }
 }
