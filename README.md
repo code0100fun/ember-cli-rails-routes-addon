@@ -1,25 +1,16 @@
-# Ember-cli-rails-routes
+# Ember CLI Rails Routes Addon
 
-This README outlines the details of collaborating on this Ember addon.
+This is the Ember CLI addon portion of the ember-cli-rails routes layer.
 
-## Installation
+This addon has two jobs:
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+  * prepend asset URLs with the path Rails needs to find the Ember app
+  * set the rootURL of the Ember application based on the Rails mount point
 
-## Running
+Goals:
 
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+  * should not have to configure where Rails has mounted the app
+  * should not have to configure relative path to Rails app
+  * should be able to run `ember serve` like normal
+  * should be able to `ember test` sucessfully
+  * should be able to visit `/app/tests` to run tests
